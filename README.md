@@ -14,6 +14,13 @@ This image is slightly difficult as you will need to mount your X11 Unix Socket.
 If you can get docker + xeyes working (or some other docker + GUI container) then this *'should'* work just fine.
 
 ```bash
+# Compose:
+docker-compose up -d
+
+* For close
+docker-compose down
+
+
 # Minimal:
 docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY 06kellyjac/teams &
 
