@@ -15,6 +15,7 @@ If you can get docker + xeyes working (or some other docker + GUI container) the
 
 ```bash
 # Compose:
+* Start
 docker-compose up -d
 
 * For close
