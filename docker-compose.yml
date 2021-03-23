@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  msteams:
+    image: 06kellyjac/teams
+    container_name: "msteams"
+    volumes:
+    - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=unix$DISPLAY
