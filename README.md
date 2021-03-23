@@ -15,12 +15,17 @@ If you can get docker + xeyes working (or some other docker + GUI container) the
 
 ```bash
 # Compose:
-* Start
+* Begin
 docker-compose up -d
+
+* Stop
+docker-compose stop
+
+* Start
+docker-compose start
 
 * For close
 docker-compose down
-
 
 # Minimal:
 docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY 06kellyjac/teams &
